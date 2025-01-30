@@ -33,4 +33,5 @@ knapper.forEach(knapp => {
     });
 });
 
+// Denne koden vil på en måte vise informasjonen på nettsiden automatisk når du refresher
 visRessurser("HTML");
