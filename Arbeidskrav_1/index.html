@@ -1,34 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arbeidskrav 1</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="ressurser.js"></script>
-    <link rel="stylesheet" href="style.css"/>
+    <title>Ressursarkiv</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Arbeidskrav 1 - Aidarus</h1>
+        <nav>
+            <button data-kategori="HTML">HTML</button>
+            <button data-kategori="CSS">CSS</button>
+            <button data-kategori="JavaScript">JavaScript</button>
+            <button data-kategori="React">React</button>
+            <button data-kategori="Sanity and headless CMS">Sanity</button>
+        </nav>
     </header>
-    <nav>
-        <ul>
-          <li><button data-category="HTML">HTML</button></li>
-          <li><button data-category="CSS">CSS</button></li>
-          <li><button data-category="JavaScript">JavaScript</button></li>
-          <li><button data-category="React">React</button></li>
-          <li><button data-category="Sanity">Sanity and headless CMS</button></li>
-        </ul>
-      </nav>
-        <main>
-            <section id="ressurs-info"></section>
-            <h2 id="kategori-overskrift"></h2>
-            <p id="kategori-info"></p>
+    <main>
+        <section id="ressurs-info">
+            <h2 id="kategori-tittel"></h2>
+            <p id="kategori-beskrivelse"></p>
             <ul id="ressurs-liste"></ul>
         </section>
-        </main>
-        <script src="ressurser.js"></script>
-        <script src="script.js"></script>
+    </main>
+    <script src="ressurser.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
