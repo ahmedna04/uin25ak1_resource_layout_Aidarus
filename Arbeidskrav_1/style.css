@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E1E5EE; 
+}
+
+nav button {
+    padding-bottom: 50px;
+    padding-right: 50px;
+    background-color: #2A324B; 
+    color: #ffffff;
+    border: none;
+    padding: 10px 110px;
+    margin: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+nav button.active {
+    background-color: #fff; 
+    color: #58699D; 
+}
+
+
+main {
+    background-color: #fff;
+    padding: 100px;
+    margin: 100px;
+    color: #2A324B; 
+}
