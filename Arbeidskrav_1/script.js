@@ -4,10 +4,11 @@ const beskrivelse = document.getElementById("kategori-beskrivelse");
 const liste = document.getElementById("ressurs-liste");
 const knapper = document.querySelectorAll("nav button");
 
-function ressurser(kategori) {
+function visRessurser(kategori) {
 
-    const valgtKategori = resource.find(res => res.kategori === kategori);
-    tittel.textContent = valgtKategori.kategori;
+    const valgtKategori = resources.find(res => res.category === kategori);
+    tittel.textContent = valgtKategori.category;
+    beskrivelse.textContent = valgtKategori.text;
     
     liste.innerHTML= "";
     valgtKategori.sources.forEach(kilde => {
@@ -22,7 +23,10 @@ function ressurser(kategori) {
     
 }
 knapper.forEach(knapp => {
-    knapp.addEventListener("klikk", () => {
+    knapp.addEventListener("click", () => {
         const kategori = knapp.getAttribute("data-kategori");
-    })
-})
+        visRessurser(kategori);
+    });
+});
+
+visRessurser("HTML");
