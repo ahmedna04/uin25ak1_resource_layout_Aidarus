@@ -5,10 +5,24 @@ const liste = document.getElementById("ressurs-liste");
 const knapper = document.querySelectorAll("nav button");
 
 function ressurser(kategori) {
+
     const valgtKategori = resource.find(res => res.kategori === kategori);
     tittel.textContent = valgtKategori.kategori;
-    beskrivelse.textContent = valgtKategori.text;
-    liste.innerHTML = valgtKategori.sources.map(kilde => 
-        `<li><a href="${kilde.url}">${kilde.title}</a></li>`
-    ).join("");
+    
+    liste.innerHTML= "";
+    valgtKategori.sources.forEach(kilde => {
+        const link = document.createElement("a");
+        link.href = kilde.url;
+        link.textContent = kilde.tittel;
+
+        const liste = document.createElement("li");
+        list.appendChild(link);
+    });
+
+    
 }
+knapper.forEach(knapp => {
+    knapp.addEventListener("klikk", () => {
+        const kategori = knapp.getAttribute("data-kategori");
+    })
+})
